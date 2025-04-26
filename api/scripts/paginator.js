@@ -1,7 +1,7 @@
 let currentPage = 1;
 let limit = 10; // Set how many records per page
 let totalPages = 1; // Will be updated dynamically
-let apiUrl = 'http://localhost/api/api.php'; //API endpoint
+let apiUrl = 'http://localhost/api/api.php'; // Update with your API endpoint
 
 // Function to fetch data and update the UI
 async function fetchData(page = 1) {
@@ -23,7 +23,7 @@ async function fetchData(page = 1) {
                 <td>${user.email}</td>
                 <td>${user.age}</td>
                 <td><a href="/api/php/phpupdate.php?id=${user.id}" class="btn-link update-link">Update</a></td>
-                <td><a href="/api/php/phpdelete.php?id=${user.id}" class="btn-link delete-link">Delete</a></td>
+                <td><a href="/api/php/phpsubmit.php?id=${user.id}&method=DELETE" class="btn-link delete-link">Delete</a></td>
             `;
             userTableBody.appendChild(row);
         });
