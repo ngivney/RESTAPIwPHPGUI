@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "username";
-$password = "database_password";
-$dbname = "database_name";
+$username = "user_name";
+$password = "db_password";
+$dbname = "db_name";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,9 +17,9 @@ if ($conn->connect_error) {
 
 class Database {
     private string $host = 'localhost';
-    private string $username = 'username';
-    private string $password = 'database_password';
-    private string $dbname = 'database_name';
+    private string $username = 'user_name';
+    private string $password = 'db_password';
+    private string $dbname = 'db_name';
     private ?mysqli $connection = null;
 
     public function __construct() {

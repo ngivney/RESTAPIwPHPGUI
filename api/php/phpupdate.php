@@ -50,7 +50,7 @@ if ($response === false) {
                 <form action="http://localhost/api/">
                     <input type="submit" value="BACK" />
                 </form>
-                <form action='phpput.php' method='post' accept-charset='UTF-8' enctype='multipart/form-data'> 
+                <form action='phpsubmit.php' method='post' accept-charset='UTF-8' enctype='multipart/form-data'> 
                     <h2>Update User</h2>
 
                     <input type="hidden" name="id" value="<?php echo htmlspecialchars($id); ?>">
@@ -66,7 +66,7 @@ if ($response === false) {
                     <strong>Age<br></strong> 
                     <input id='age' name='age' type='number' min="0" value="<?php echo htmlspecialchars($age); ?>" required>
                     <br>
-        
+                    <input type="hidden" id="method" name="method" value="PUT">
                     <input type='submit' value='Submit'>
                 </form>
             </td>

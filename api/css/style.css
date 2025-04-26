@@ -165,8 +165,6 @@ button:hover {
     font-size: 16px;
 }
 
-/* Future message handling */
-
 .alert.success {
     background-color: #d4edda;
     color: #155724;
